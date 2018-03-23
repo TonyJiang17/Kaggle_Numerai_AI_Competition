@@ -48,7 +48,7 @@ probability_class_of_one = np.array([x[1] for x in prob_predictions_tourney[:]])
 t_id = tournament_data['t_id']
 
 np.savetxt(
-    '../probability.csv',          # file name
+    '../prediction_prob.csv',          # file name
     probability_class_of_one,  # array to savela
     fmt='%.2f',               # formatting, 2 digits in this case
     delimiter=',',          # column delimiter
@@ -56,7 +56,7 @@ np.savetxt(
     header= 'probability')   # file header
 
 np.savetxt(
-    '../t_id.csv',          # file name
+    '../prediction_id.csv',          # file name
     t_id,                   # array to save
     fmt='%.d',              # formatting, 2 digits in this case
     delimiter=',',          # column delimiter
